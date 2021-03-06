@@ -14,7 +14,7 @@ java -version'''
         stage('Check for POM') {
           steps {
             fileExists 'pom.xml'
-            sh 'cd /user/woehrlea/ && touch pom.txt  && echo "Bingo" >> pom.txt'
+            sh ' touch pom.txt  && echo "Bingo" >> pom.txt'
           }
         }
 
